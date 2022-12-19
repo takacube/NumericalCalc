@@ -14,12 +14,12 @@ int main() {
     char in_filename[NMAX], out_filename[NMAX];
 
     //INITIL
-    PE = 500.0;
+    PE = 100000000.0;
     dlx = 1.0;
     dx = dlx/NI;
     AT = 1.0/PE;
     U = 1.0;
-    CN = 1.005;
+    CN = 0.99;
     dt = CN/(U/dx+2.*AT/dx/dx);
     TIMEEND = 0.8;
 
